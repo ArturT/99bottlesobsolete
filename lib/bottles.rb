@@ -14,6 +14,10 @@ class Bottles
     "#{first_sentense}\n#{second_sentense}\n"
   end
 
+  def verses(x, y)
+    verse(x) << "\n" << verse(y)
+  end
+
   private
 
   def pluralize(count, singular_word, plural_word)
