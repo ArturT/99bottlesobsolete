@@ -23,6 +23,10 @@ class Bottles
     str
   end
 
+  def song
+    verses(99, 0)
+  end
+
   private
 
   def pluralize(count, singular_word, plural_word)
