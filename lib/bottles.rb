@@ -15,7 +15,12 @@ class Bottles
   end
 
   def verses(x, y)
-    verse(x) << "\n" << verse(y)
+    str = ''
+    (y..x).to_a.reverse.each do |i|
+      str += verse(i)
+      str += "\n" if i > y
+    end
+    str
   end
 
   private
